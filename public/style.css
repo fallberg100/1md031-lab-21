@@ -1,1 +1,95 @@
-/*empty*/
+@import 'https://fonts.googleapis.com/css?family=Pacifico|Dosis';
+
+
+body {
+    font-family: "Times New Roman";
+    background-color: #262424;
+    font-size: 110%;
+    border: Ridge 30px;
+    border-color: black;
+}
+
+section{
+    background-color: #262424;
+
+}
+
+.top{
+}
+
+#container{
+    width:100%;
+    height:auto;
+    opacity:90%;
+    margin-top: 40px;
+
+}
+#headertext{
+    position: absolute;
+    margin-left: 480px;
+    margin-top:-520px;
+    font-size: 250%;
+    color: #211e1e;
+}
+#headerpic{
+    border:ridge 1px;
+    border-radius: 20px;
+}
+
+.info{
+    background-color:#262424;
+    overflow: auto;
+    color: antiquewhite;
+    font-size: 120%;
+}
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    background-color:#262424;
+    border: ridge 2px;
+    padding-left: 50px;
+    border-radius: 20px;
+    margin:40px;
+}
+.allergier {
+    font-weight: bold;
+    color: crimson;
+    font-style: italic;
+}
+.customer{
+    margin: 10px;
+    background-color: #262424;
+    color: antiquewhite;
+    overflow: auto;
+}
+
+input[type="radio"] {
+    height: .7em;
+    width: .7em;
+}
+button:hover {
+    cursor: pointer;
+    background-color: lightgreen;
+
+}
+.jappa{
+   grid-column: 1;
+}
+.mega{
+    grid-column: 2;
+}
+.maestro{
+    grid-column: 3;
+}
+#headerpic{
+    width: 100%;
+    opacity: 0.95;
+    overflow:hidden
+}
+.burger{
+    border: ridge 2px;
+    border-radius: 20px;
+    margin: -10px;
+}
+
+

@@ -2,116 +2,119 @@
 <head>
     <title>Filles burgare</title>
     <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
-<main>
-    <section>
-        <header>
-            <h1>Välkommen till BurgerOnline</h1>
-            <h2>Select burger</h2>
-            <p1>This is where you execute your burger selection</p1> <!-- yallah -->
-
-        </header>
-    </section>
-
-    <section>
-        <div style="float: left">
+    <header class="top" style="text-align: center">
+        <div id="container">
             <figure>
-                <h2>Jappalenoception</h2>
-                <img src="https://silveroak.com/wp-content/uploads/2020/03/Recipe-Wagyu-Burger.jpg" style="width: 300px";>
+                <img id="headerpic" src="https://www.capetown.travel/wp-content/uploads/2018/12/Twelve_Apostles_Hotel_Views.jpg";>
             </figure>
-            <dl>
-                <dt>Contains</dt>
-                <dd>
-                    <li>900 Kcal</li>
-                    <li>Gluten</li>
-                    <li>Good taste</li>
-                </dd>
-            </dl>
-
+            <h1 id="headertext">Welcome to BurgerOnline</h1>
         </div>
-        <div style="float: left">
-            <figure>
-                <h2>Mega Burger</h2>
-                <img src="https://537924-1719237-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2021/02/Classic-homemade-hamburger-1024x683.jpg" style="width:300px";>
-            </figure>
-            <dl>
-                <dt>Contains</dt>
-                <dd>
-                    <li>1200 Kcal</li>
-                    <li>Zero gluten</li>
-                    <li>Mega banger things </li>
-                </dd>
-            </dl>
-
-        </div>
-        <div style="float:left;">
-            <figure>
-                <h2>Maestro special</h2>
-                <img src="https://cdn.vox-cdn.com/thumbor/G37rJxsEExFQgCybvOP44Ozg0Vk=/0x1155:2253x2845/1200x800/filters:focal(0x1155:2253x2845)/cdn.vox-cdn.com/uploads/chorus_image/image/48511073/151201_mr1cx_rugby_burger37888.0.0.jpg" style="width:300px";>
-            </figure>
-            <dl>
-                <dt>Contains</dt>
-                <dd>
-                    <li>420,69 Kcal</li>
-                    <li>Lactose</li>
-                    <li>Heavenly experience</li>
-                </dd>
-            </dl>
-        </div>
-    </section>
-
-    <section style="clear: left">
-        <header>
-            <h1>Customer information</h1>
-            <p1>Provide necessary information</p1>
-        </header>
-        <p>
-            <label for="Fullname">Fullname</label><br>
-            <input type="text" id="Fullname" name="fn" required="required" placeholder="First and lastname">
-        </p>
-        <p>
-            <label for="E-mail">E-mail</label><br>
-            <input type="text" id="E-mail" name="Em" placeholder="E-mail adress">
-        </p>
-        <p>
-            <label for="Street">Street</label><br>
-            <input type="text" id="Street" name="St" required="required" placeholder="Street name">
-        </p>
-        <p>
-            <label for="House number">House number</label><br>
-            <input type="text" id="House number" name="Hn" required="required" placeholder="House number">
-        </p>
-
-
-        <p>
-            <label for="payment" >Payment</label>
-            <select id="payment" name="pay"><br>
-                <option>Credit card</option>
-                <option>Diamonds</option>
-                <option>Gold</option>
-                <option>Swish</option>
-            </select>
-        </p>
-        <form>
-            <p>Gender:</p>
-            <div>
-                <input type="radio" id="Male" name="Male" checked="checked">
-                <label for="Male">Male</label><br>
-
-                <input type="radio" id="Female" name="Ma">
-                <label for="Female">Female</label><br>
-
-                <input type="radio" id="Other" name="Ot">
-                <label for="Other">Other</label>
-            </div><br>
-            <div>
-                <button type="submit">Place my order</button>
+    </header>
+    <main>
+        <section class="info">
+            <h2 style="text-align: center">Select burger</h2>
+            <p  style="text-align: center">This is where you execute your burger selection</p> <!-- yallah -->
+            <div class="wrapper">
+                <div style="float: left" class="jappa">
+                    <figure>
+                        <h2>Jappalenoception</h2>
+                        <img src="https://silveroak.com/wp-content/uploads/2020/03/Recipe-Wagyu-Burger.jpg" style="width: 300px"; class="burger">
+                    </figure>
+                    <dl>
+                        <dt>Contains</dt>
+                        <dd>
+                            <li>900 Kcal</li>
+                            <li class="allergier">Gluten</li>
+                            <li>Good taste</li>
+                        </dd>
+                    </dl>
+                </div>
+                <div style="float: left" class="mega">
+                    <figure>
+                        <h2>Mega Burger</h2>
+                        <img src="https://537924-1719237-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2021/02/Classic-homemade-hamburger-1024x683.jpg" style="width:300px"; class="burger">
+                    </figure>
+                    <dl>
+                        <dt>Contains</dt>
+                        <dd>
+                            <li>1200 Kcal</li>
+                            <li class="allergier">Zero gluten</li>
+                            <li>Mega banger things </li>
+                        </dd>
+                    </dl>
+                </div>
+                <div style="float:left;" class="maestro">
+                    <figure>
+                        <h2>Maestro special</h2>
+                        <img src="https://cdn.vox-cdn.com/thumbor/G37rJxsEExFQgCybvOP44Ozg0Vk=/0x1155:2253x2845/1200x800/filters:focal(0x1155:2253x2845)/cdn.vox-cdn.com/uploads/chorus_image/image/48511073/151201_mr1cx_rugby_burger37888.0.0.jpg" style="width:300px"; class="burger">
+                    </figure>
+                    <dl>
+                        <dt>Contains</dt>
+                        <dd>
+                            <li>420,69 Kcal</li>
+                            <li class="allergier">Lactose</li>
+                            <li>Heavenly experience</li>
+                        </dd>
+                    </dl>
+                </div>
             </div>
-        </form>
+        </section>
+
+        <section style="clear: left" class="customer">
+            <header>
+                <h1>Customer information</h1>
+                <p1>Provide necessary information</p1>
+            </header>
+            <p>
+                <label for="Fullname">Fullname</label><br>
+                <input type="text" id="Fullname" name="fn" required="required" placeholder="First and lastname">
+            </p>
+            <p>
+                <label for="E-mail">E-mail</label><br>
+                <input type="text" id="E-mail" name="Em" placeholder="E-mail adress">
+            </p>
+            <p>
+                <label for="Street">Street</label><br>
+                <input type="text" id="Street" name="St" required="required" placeholder="Street name">
+            </p>
+            <p>
+                <label for="House number">House number</label><br>
+                <input type="text" id="House number" name="Hn" required="required" placeholder="House number">
+            </p>
 
 
-    </section>
-</main>
+            <p>
+                <label for="payment" >Payment</label>
+                <select id="payment" name="pay"><br>
+                    <option>Credit card</option>
+                    <option>Diamonds</option>
+                    <option>Gold</option>
+                    <option>Swish</option>
+                </select>
+            </p>
+            <form>
+                <p>Gender:</p>
+                <div>
+                    <input type="radio" id="Male" name="Male" checked="checked">
+                    <label for="Male">Male</label><br>
+
+                    <input type="radio" id="Female" name="Ma">
+                    <label for="Female">Female</label><br>
+
+                    <input type="radio" id="Other" name="Ot">
+                    <label for="Other">Other</label>
+                </div><br>
+                <div>
+                    <button type="submit">Place my order</button>
+                </div>
+            </form>
+
+
+        </section>
+    </main>
 </body>
 </html>
