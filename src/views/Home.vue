@@ -16,6 +16,22 @@ import io from 'socket.io-client'
 
 const socket = io();
 
+function MenuItem(Name,url,kCal,lactose,gluten) {
+  this.name = Name; // The *this* keyword refers to the object itself
+  this.pic = url;
+  this.calories = kCal;
+  this.contents = lactose;
+  this.ingrediens = gluten;
+  return this
+}
+
+const BurgerArray = [
+    new MenuItem("Jappaleno","https://www.capetown.travel/wp-content/uploads/2018/12/Twelve_Apostles_Hotel_Views.jpg",800,true,true),
+    new MenuItem("BigFille","https://silveroak.com/wp-content/uploads/2020/03/Recipe-Wagyu-Burger.jpg",1200,false,true),
+    new MenuItem("Meastrospecial","https://537924-1719237-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2021/02/Classic-homemade-hamburger-1024x683.jpg",1100,false,false)
+];
+console.log(BurgerArray);
+
 export default {
   name: 'Home',
   components: {
@@ -23,10 +39,8 @@ export default {
   },
   data: function () {
     return {
-      burgers: [ {name: "small burger", kCal: 250},
-                 {name: "standard burger", kCal: 450},
-                 {name: "large burger", kCal: 850}
-               ]
+      yourVariabel:"Välj en burgare",
+      burgers: BurgerArray
     }
   },
   methods: {
