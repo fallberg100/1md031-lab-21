@@ -1,0 +1,25 @@
+[
+  {
+    "name": "Jappaleno",
+    "kCal": 800,
+    "lactose": true,
+    "gluten": true,
+    "img": "https://537924-1719237-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2021/02/Classic-homemade-hamburger-1024x683.jpg"
+  },
+  {
+    "name": "Maestro Spezial",
+    "kCal": 700,
+    "lactose": true,
+    "gluten": false,
+    "img": "https://silveroak.com/wp-content/uploads/2020/03/Recipe-Wagyu-Burger.jpg"
+
+  },
+  {
+    "name": "Vegan Burger",
+    "kCal": 750,
+    "lactose": false,
+    "gluten": false,
+    "img": "https://cdn.vox-cdn.com/thumbor/G37rJxsEExFQgCybvOP44Ozg0Vk=/0x1155:2253x2845/1200x800/filters:focal(0x1155:2253x2845)/cdn.vox-cdn.com/uploads/chorus_image/image/48511073/151201_mr1cx_rugby_burger37888.0.0.jpg"
+
+  }
+]

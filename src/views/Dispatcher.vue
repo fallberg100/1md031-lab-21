@@ -2,8 +2,21 @@
   <div id="orders">
     <div id="orderList">
       <div v-for="(order, key) in orders" v-bind:key="'order'+key">
-        #{{ key }}: {{ order.orderItems.join(", ") }}
+        <p class="order">
+          Order #{{ key }}:</p>
+
+        <p class="bold">Ordered Burgers: </p>
+        {{order.orderItems}}
+        <p class="bold"> Customer information:</p>
+        {{order.details.fn}}
+        , {{order.details.em}}
+        , {{order.details.pay}}
+        , {{order.details.gender}}
+        <br>
+        <hr>
+
       </div>
+
       <button v-on:click="clearQueue">Clear Queue</button>
     </div>
     <div id="dots">
@@ -64,5 +77,12 @@ export default {
   width:20px;
   height:20px;
   text-align: center;
+}
+.bold{
+  font-weight: bold;
+}
+.order{
+  font-weight: bold;
+  font-family: cursive;
 }
 </style>
